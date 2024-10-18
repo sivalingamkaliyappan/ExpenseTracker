@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fbffff; 
+    display: grid;
+    place-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    background-color: #ffffff; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    border-radius: 15px; 
+}
+
+.Inputs {
+    flex: 1;
+    background-color: grey;
+    padding: 1em;
+    border-radius: 1em; 
+}
+
+#Your-bal{
+    font-size: 1.5rem;
+}
+
+.Inputs h2, .Inputs h4, .Inputs h1 {
+    font-weight: bolder;
+    margin-bottom:1vh; 
+    padding: 0.2em;
+    color: antiquewhite;
+}
+
+.income-expenditure {
+    height: 15vh;
+    
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 15px;
+}
+
+.income-expenditure div {
+    flex: 1;
+    padding: 1vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.income {
+    border: 3px solid #66bb6a; 
+    color: whitesmoke;
+}
+
+.expenditure {
+    border: 3px solid #e40000; 
+    color: whitesmoke;
+}
+
+label {
+    display: inline-block;
+    margin: 0.5em 0;
+    font-size: 1rem;
+    font-weight: 600; 
+}
+
+input[type="text"], input[type="number"] {
+    border: 2px solid #b0bec5; 
+    border-radius: 5px;
+    display: block;
+    padding: 0.7em; 
+    width: 15vw;
+}
+
+.btn {
+    padding: 1em; 
+    margin: 1em 1.3em;
+    margin-top: 4em;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    width: 15vw;
+    text-align: center; 
+}
+
+#btn1{
+    background-color: green;
+}
+#btn2{
+    background-color: red;
+}
+
+#btn1:hover,#btn2:hover{
+    background-color: rgb(25, 59, 49);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+.transaction {
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.transaction h3 {
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #b0bec5;
+    text-align: center;
+    margin-bottom: 1em; 
+}
+
+#trans {
+    list-style-type: none;
+    padding: 0;
+}
+
+#trans li {
+    color: #424242; 
+    font-weight: bold;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1.5em 0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #f5f5f5; 
+}
+
+.del-btn {
+    position: absolute;
+    top: -1vw;
+    right: -1vw;
+    width: 2vw;
+    background-color: #f44336; 
+    color: #ffffff; 
+    cursor: pointer;
+    border: none;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+#trans li:hover .del-btn {
+    opacity: 1;
+}
+
+#trans li.inc span {
+    color: #388e3c; 
+    font-weight: bolder;
+}
+
+#trans li.exp span {
+    color: #d32f2f; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5; 
+}
+
+.minus-Bal {
+    color: #d32f2f; 
+}
+
+
+#form{
+    display: flex;
+    flex-direction: row;
+}
+
+#form div{
+    flex:1;
+    margin-left: 0.5em;
+}
+
+.Bal{
+    color: black;
+}
+
+
+
+button#clear{
+    margin-left: 10vw;
+    padding: 1em;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: rgb(250, 9, 9);
+    color: white;
+    border: none;
+    
+}
+
+button#clear:hover{
+    background-color: rgba(27, 18, 25, 0.897);
+}

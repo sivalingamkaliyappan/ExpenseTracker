@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     
+    <h1>EXPENSE TRACKER</h1>
+    <div class="container">
+        <div class="Inputs">
+            <h2>INCOME AND EXPENSE </h2>
+            <h4 id="Your-bal">Your balance</h4>
+            <h1 id="balance">Rs. 0.0</h1>
+            <div class="income-expenditure">
+                <div class="income">
+                    <h4>INCOME</h4>
+                    <p id="income" class="amt add">Rs. 0.0</p>
+                </div>
+                <div class="expenditure">
+                    <h4>EXPENSE</h4>
+                    <p id="expenditure" class="amt minus">Rs. 0.0</p>
+                </div>
+            </div>
+
+            <div id="form">
+
+            <div id="income-form">
+
+                <div class="form-options">
+                    <label for="desc">Enter Income here</label>
+                    <input type="text" id="description_inc" placeholder=" Add income">
+                </div>
+
+                
+                <div class="form-options">
+                    <label for="desc">Amount</label>
+                    <input type="number" id="amount_inc" placeholder="Enter the amount">
+                </div>
+                
+            <button class="btn" id="btn1">ADD</button>
+
+            </div>
+
+            
+            <div id="expense-form">
+
+                <div class="form-options">
+                    <label for="desc">Enter Expense here</label>
+                    <input type="text" id="description_exp"  placeholder=" Add expense">
+                </div>
+
+                
+                <div class="form-options">
+                    <label for="desc">Amount</label>
+                    <input type="number" id="amount_exp" placeholder="Enter the amount">
+                </div>
+
+                
+            <button  class="btn" id="btn2">ADD</button>
+
+            </div>
+
+
+
+        </div>
+
+        </div>
+        <div class="transaction">
+
+            <h3>Transaction Details<span><button id="clear">Clear</button></span></h3> 
+
+            <ul id="trans">
+ 
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
